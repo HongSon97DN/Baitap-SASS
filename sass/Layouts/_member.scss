@@ -1,0 +1,53 @@
+
+.member{
+    @include styleButtonHover($color-dark,$bg-section);
+}
+
+.member-content{
+    
+    background-image: url(../img/Wave_White_bottom_right_shape_01.png);
+    background-position: bottom;
+    background-size: cover;
+    
+    .row{
+        flex-wrap: nowrap;
+    }
+    .card{
+        width: 25%;
+        border: 1px solid transparent;
+        border-radius: 10px;
+        margin: 15px 10px;
+
+        &:hover{
+            box-shadow: 2px 5px 15px 4px grey;
+            transition: all 0.5s;
+        }
+
+        img{
+            border-radius: 10px 10px 0 0;
+            transition: all 0.7s;
+
+            &:hover{
+                transform: scaleY(1.05)
+                
+            }
+        }
+
+        .card-body{
+            @include styleButtonHover($color-dark, $bg-card);
+            border-radius: 0 0 10px 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+
+            .card-name{
+                @include styleText($color-pupple,$fs-4,$fw-2);
+            }
+
+            .card-title{
+                @include styleText($color-dark,$fs-5,$fw-3);
+            }
+        }
+    }
+}

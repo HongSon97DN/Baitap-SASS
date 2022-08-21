@@ -1,0 +1,58 @@
+
+// $Color
+$color-pupple: #b61984 ;
+$color-dark: #000;
+$color-white: #fff;
+
+//$bg-color
+$bg-purple: #b61984;
+$bg-white: #fff;
+$bg-transparent: transparent;
+$bg-card: rgba(255, 255, 255, 1);
+$bg-section: #dcd1f3;
+
+// $padding
+$pd-nav: 0 40px 0 0;
+$pd-button: 0.6rem 1.5rem;
+$pd-icon: 0 4px;
+$pd-1rem: 1rem;
+$pd-carousel: 0 0 100px 0;
+$pd-contact: 5rem 0 0 0;
+$pd-send: 15px 45px;
+
+// $font-size
+$fs-1: 13px;
+$fs-2: 1.1rem;
+$fs-3: 3.8rem;
+$fs-4: 0.75rem;
+$fs-5: 1.55rem;
+$fs-6: 2.5rem;
+$fs-7: 0.8rem;
+$fs-8: 0.9rem;
+$fs-9: 1rem;
+
+// $font-weight
+$fw-1: 400;
+$fw-2: 600;
+$fw-3: 700;
+$fw-4: 500;
+
+// $letter-spacing
+$ls-1: 1px;
+$ls-2: 2px;
+$ls-3: 3px;
+
+// $$border-radius
+$br-1: 10px;
+$br-5: 50px;
+
+// $border
+$bd-1: 1px solid #b61984;
+
+// $break points
+$breakpoints: (
+    "extra-large": 1200px,
+    "large": 992px,
+    "medium": 768px,
+    "small": 576px
+);

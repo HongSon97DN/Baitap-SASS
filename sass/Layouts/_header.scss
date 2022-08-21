@@ -1,0 +1,79 @@
+header{
+    background-image: url(../../img/yellow_top_wave_01.png);
+    background-position: left;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 200px;
+
+    #navbarHeader{
+        .nav-item .active{
+         
+        }
+    }
+    .nav-item{
+        .nav-link{
+            @include styleText($color-dark, $fs-1, $fw-2);
+            position: relative;
+
+            &:hover{
+                @include styleText($color-pupple,none,none);
+                
+                &::after{
+                    content: "";
+                    display: block;
+                    position: absolute;
+                    z-index: 5;
+                    bottom: -4px;
+                    margin-left: -4px;
+                    left: 50%;
+                    pointer-events: none;
+                    height: 8px;
+                    width: 8px;
+                    border-radius: 50%;
+                    background-color: #b61984;
+                    transition: all 0.9s;
+                }
+            }
+        }
+
+    }
+
+    #navbarHeader{
+        .navbar-nav{
+            li{
+                @include stylePadding($pd-nav);
+            }
+        }
+    }
+
+    #navbarHeader{
+        button{
+            @include styleButton($bg-transparent,$br-5,$bd-1,$pd-button,0);
+            @include styleText($color-white,$fs-9,none);
+            box-shadow: 0 0 0 3em #b61984 inset;
+
+
+            &:hover{
+                @include styleButtonHover($color-pupple,$bg-white);
+                cursor: pointer;
+                box-shadow: 0 0 0 1px #fff inset;
+                transition: all 0.5s;
+            }
+        }
+       
+    }
+
+    #navbarHeader{
+        .nav-social{
+            .nav-icon{
+                @include stylePadding($pd-icon);
+                display: inline-block;
+
+                &:hover{
+                    @include styleText($color-pupple,none,none);
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}

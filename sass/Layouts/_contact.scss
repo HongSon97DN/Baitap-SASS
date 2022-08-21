@@ -1,0 +1,86 @@
+.contact{
+    @include stylePadding($pd-contact);
+
+    .contact-content{
+        background-image: url(../img/accent_bottom_wave_01.png);
+        background-position: bottom;
+        background-size: contain;
+        padding-bottom: 2em;
+        background-repeat: no-repeat;
+    }
+
+    .row{
+        h2{
+            @include styleText($color-dark,$fs-6,$fw-3);
+            text-align: center;
+            letter-spacing: 1px;
+            padding: 20px 0 50px 0;
+        }
+        .form-content{
+            box-shadow: 0 30px 30px -10px rgb(0 0 0 / 20%);
+            padding: 0 25px 60px 25px;
+            border-radius: 10px;
+            background-color: rgba(255, 255, 255, 1);
+
+}
+
+            .btn{
+
+                @include styleButton($bg-transparent,$br-5,$bd-1,$pd-send,$ls-3);
+                @include styleText($color-white,$fs-7,$fw-2);
+                box-shadow: 0 0 0 3em #b61984 inset;
+                margin-top: 30px;
+
+                &:hover{
+                    @include styleButtonHover($color-pupple,$bg-white);
+                    cursor: pointer;
+                    box-shadow: 0 0 0 1px #fff inset;
+                    transition: all 0.5s;
+
+                }
+            }
+
+            .form-control{
+                &:focus{
+                    border-color: #fff !important;
+                    box-shadow: 0 0 0 0 #fff;
+                   
+                }
+            }
+
+            #icon{
+                align-items: baseline;
+                margin-top: 30px;
+            }
+
+            .form-group.d-flex{
+                align-items: center;
+                border: 1px solid #d1cdcd;
+                border-radius: 35px;
+                padding: 5px 10px;
+                transition: all 0.8s;
+                margin: 15px 0;
+
+                &:focus-within{
+                    border: 1px solid gray;
+                }
+
+                span{
+                    padding: 0 5px;
+
+                    i{
+                        color: #b61984;
+                    }
+                }
+
+                input,textarea,select {
+                    border: none;
+                    border-radius: 35px;
+                }
+                
+            }
+            input{
+                padding: 0 5px;
+            }
+        }
+}

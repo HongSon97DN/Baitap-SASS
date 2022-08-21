@@ -1,0 +1,307 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.my-container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+html, body {
+  font-family: "Roboto", sans-serif;
+}
+
+header {
+  background-image: url(../../img/yellow_top_wave_01.png);
+  background-position: left;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 200px;
+}
+header .nav-item .nav-link {
+  color: #000;
+  font-size: 13px;
+  font-weight: 600;
+  position: relative;
+}
+header .nav-item .nav-link:hover {
+  color: #b61984;
+  font-size: none;
+  font-weight: none;
+}
+header .nav-item .nav-link:hover::after {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: 5;
+  bottom: -4px;
+  margin-left: -4px;
+  left: 50%;
+  pointer-events: none;
+  height: 8px;
+  width: 8px;
+  border-radius: 50%;
+  background-color: #b61984;
+  transition: all 0.9s;
+}
+header #navbarHeader .navbar-nav li {
+  padding: 0 40px 0 0;
+}
+header #navbarHeader button {
+  background: transparent;
+  border-radius: 50px;
+  border: 1px solid #b61984;
+  padding: 0.6rem 1.5rem;
+  letter-spacing: 0;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: none;
+  box-shadow: 0 0 0 3em #b61984 inset;
+}
+header #navbarHeader button:hover {
+  color: #b61984;
+  background-color: #fff;
+  cursor: pointer;
+  box-shadow: 0 0 0 1px #fff inset;
+  transition: all 0.5s;
+}
+header #navbarHeader .nav-social .nav-icon {
+  padding: 0 4px;
+  display: inline-block;
+}
+header #navbarHeader .nav-social .nav-icon:hover {
+  color: #b61984;
+  font-size: none;
+  font-weight: none;
+  cursor: pointer;
+}
+
+.carousel {
+  background: url(../img/Violet_top_left_wave.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom;
+}
+.carousel .row {
+  margin-top: -100px;
+  padding: 0 0 100px 0;
+}
+.carousel .row .col-lg-6.col-sm-12.carousel-content {
+  justify-content: center;
+  display: flex;
+  text-align: left;
+  flex-direction: column;
+}
+.carousel .row .col-lg-6.col-sm-12.carousel-content p {
+  color: #b61984;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+.carousel .row .col-lg-6.col-sm-12.carousel-content h2 {
+  color: #000;
+  font-size: 3.8rem;
+  font-weight: 700;
+}
+
+.member {
+  color: #000;
+  background-color: #dcd1f3;
+}
+
+.member-content {
+  background-image: url(../img/Wave_White_bottom_right_shape_01.png);
+  background-position: bottom;
+  background-size: cover;
+}
+.member-content .row {
+  flex-wrap: nowrap;
+}
+.member-content .card {
+  width: 25%;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  margin: 15px 10px;
+}
+.member-content .card:hover {
+  box-shadow: 2px 5px 15px 4px grey;
+  transition: all 0.5s;
+}
+.member-content .card img {
+  border-radius: 10px 10px 0 0;
+  transition: all 0.7s;
+}
+.member-content .card img:hover {
+  transform: scaleY(1.05);
+}
+.member-content .card .card-body {
+  color: #000;
+  background-color: rgb(255, 255, 255);
+  border-radius: 0 0 10px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.member-content .card .card-body .card-name {
+  color: #b61984;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+.member-content .card .card-body .card-title {
+  color: #000;
+  font-size: 1.55rem;
+  font-weight: 700;
+}
+
+.contact {
+  padding: 5rem 0 0 0;
+}
+.contact .contact-content {
+  background-image: url(../img/accent_bottom_wave_01.png);
+  background-position: bottom;
+  background-size: contain;
+  padding-bottom: 2em;
+  background-repeat: no-repeat;
+}
+.contact .row h2 {
+  color: #000;
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+  letter-spacing: 1px;
+  padding: 20px 0 50px 0;
+}
+.contact .row .form-content {
+  box-shadow: 0 30px 30px -10px rgba(0, 0, 0, 0.2);
+  padding: 0 25px 60px 25px;
+  border-radius: 10px;
+  background-color: rgb(255, 255, 255);
+}
+.contact .row .btn {
+  background: transparent;
+  border-radius: 50px;
+  border: 1px solid #b61984;
+  padding: 15px 45px;
+  letter-spacing: 3px;
+  color: #fff;
+  font-size: 0.8rem;
+  font-weight: 600;
+  box-shadow: 0 0 0 3em #b61984 inset;
+  margin-top: 30px;
+}
+.contact .row .btn:hover {
+  color: #b61984;
+  background-color: #fff;
+  cursor: pointer;
+  box-shadow: 0 0 0 1px #fff inset;
+  transition: all 0.5s;
+}
+.contact .row .form-control:focus {
+  border-color: #fff !important;
+  box-shadow: 0 0 0 0 #fff;
+}
+.contact .row #icon {
+  align-items: baseline;
+  margin-top: 30px;
+}
+.contact .row .form-group.d-flex {
+  align-items: center;
+  border: 1px solid #d1cdcd;
+  border-radius: 35px;
+  padding: 5px 10px;
+  transition: all 0.8s;
+  margin: 15px 0;
+}
+.contact .row .form-group.d-flex:focus-within {
+  border: 1px solid gray;
+}
+.contact .row .form-group.d-flex span {
+  padding: 0 5px;
+}
+.contact .row .form-group.d-flex span i {
+  color: #b61984;
+}
+.contact .row .form-group.d-flex input, .contact .row .form-group.d-flex textarea, .contact .row .form-group.d-flex select {
+  border: none;
+  border-radius: 35px;
+}
+.contact .row input {
+  padding: 0 5px;
+}
+
+footer {
+  color: #fff;
+  font-size: 0.9rem;
+  font-weight: 400;
+  background-color: #b61984;
+}
+footer .footer-content {
+  background: url(../img/footer_background.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-bottom: 200px;
+}
+footer .row {
+  padding-bottom: 100px;
+}
+footer .row h4 {
+  color: #fff;
+  font-size: 1.55rem;
+  font-weight: 700;
+}
+footer .row .footer-box {
+  width: 25%;
+}
+footer .row .footer-box p {
+  padding-bottom: 8px;
+  border-bottom: 0.5px solid #9b0e6e;
+  width: 25%;
+}
+footer .row .contactUs .d-flex {
+  align-items: center;
+}
+footer .row .contactUs .d-flex i, footer .row .contactUs .d-flex span {
+  padding: 5px 3px;
+}
+footer .row .footer-icon .my-icon {
+  padding: 10px 8px;
+}
+footer .row button {
+  background: #fff;
+  border-radius: 50px;
+  border: 1px solid #b61984;
+  padding: 0.6rem 1.5rem;
+  letter-spacing: 2px;
+  color: #000;
+  font-size: 0.8rem;
+  font-weight: 500;
+  box-shadow: 0 0 0 3em #fff inset;
+  padding: 20px 0;
+}
+footer .row button:hover {
+  color: #fff;
+  background-color: #b61984;
+  cursor: pointer;
+  transition: all 0.5s;
+  box-shadow: 0 0 0 1px #fff inset;
+  border: 1px solid #b61984;
+}
+footer .row input {
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 400;
+  background: #b61984;
+  border-radius: 50px;
+  border: none;
+  padding: 0.6rem 1.5rem;
+  letter-spacing: none;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  text-align: center;
+  height: 55px;
+}
+footer .row input::placeholder {
+  color: #fff;
+}/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,24 @@
+
+@mixin styleText($color, $fs, $fw) {
+    color: $color;
+    font-size: $fs;
+    font-weight: $fw;
+}
+
+@mixin stylePadding($pd) {
+    padding: $pd;
+}
+
+@mixin styleButton($bg,$radius,$border,$pd,$ls) {
+    background: $bg;
+    border-radius: $radius;
+    border: $border;
+    padding: $pd;
+    letter-spacing: $ls;
+}
+
+@mixin styleButtonHover($color,$bg-color) {
+    color: $color;
+    background-color: $bg-color;
+}
+

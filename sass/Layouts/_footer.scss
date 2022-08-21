@@ -1,0 +1,74 @@
+footer{
+    @include styleText($color-white,$fs-8,$fw-1);
+    background-color: $bg-purple;
+
+    .footer-content{
+        background: url(../img/footer_background.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        padding-bottom: 200px;
+    }
+
+    .row{
+        padding-bottom: 100px;
+
+        h4{
+            @include styleText($color-white,$fs-5,$fw-3);
+        }
+        .footer-box{
+            width: 25%;
+
+            p{
+                padding-bottom: 8px;
+                border-bottom: 0.5px solid #9b0e6e ;
+                width: 25%;
+            }
+        }
+        
+        .contactUs .d-flex{
+            align-items: center;
+
+            i,span{
+                padding: 5px 3px;
+            }
+        }
+
+        .footer-icon .my-icon{
+            padding: 10px 8px;                     
+        }
+
+        button{
+            @include styleButton($bg-white,$br-5,$bd-1,$pd-button,$ls-2);
+            @include styleText($color-dark,$fs-7,$fw-4);   
+            box-shadow: 0 0 0 3em #fff inset;
+            padding: 20px 0;
+
+            &:hover{
+                @include styleButtonHover($color-white,$bg-purple);
+                cursor: pointer;                   
+                transition: all 0.5s;
+                box-shadow: 0 0 0 1px #fff inset;
+                border: 1px solid #b61984;
+            }
+        }
+        
+        input{
+            @include styleText($color-white,$fs-9,$fw-1);
+            @include styleButton($bg-purple,$br-5,none,$pd-button,none);
+            border: 1px solid rgba(255,255,255,.1);
+            text-align: center;
+            height: 55px;
+        
+            &::placeholder{
+                color: #fff;
+            }
+        }
+       
+        
+    }
+}
+
+
+
+

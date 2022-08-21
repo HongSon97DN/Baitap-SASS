@@ -1,0 +1,26 @@
+.carousel{
+    background: url(../img/Violet_top_left_wave.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
+
+    .row{
+        margin-top: -100px;
+        @include stylePadding($pd-carousel);
+        
+        .col-lg-6.col-sm-12.carousel-content{
+            justify-content: center;
+            display: flex;
+            text-align: left;
+            flex-direction: column;
+            
+            p{
+                @include styleText($color-pupple,$fs-2,$fw-2);
+            }
+    
+            h2{
+                @include styleText($color-dark,$fs-3,$fw-3);
+            }
+        }
+    }
+}

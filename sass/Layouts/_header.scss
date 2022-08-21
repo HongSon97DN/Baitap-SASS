@@ -5,9 +5,39 @@ header{
     background-repeat: no-repeat;
     height: 200px;
 
+    position: relative;
+   
+    .navbar{
+        position: fixed;
+        top: 0;
+        right: 0;
+        z-index: 15;
+        margin-right: 35px;
+    }
+
     #navbarHeader{
-        .nav-item .active{
-         
+        .nav-item.active{   
+            &:hover{
+                &::after{
+                    display: none;
+                    transition: all 0.5s;
+                }
+            }
+            &::after{
+                content: "";
+                    display: block;
+                    position: absolute;
+                    z-index: 5;
+                    margin-left: 20px;
+                    margin-top: -4px;
+                    pointer-events: none;
+                    height: 8px;
+                    width: 8px;
+                    border-radius: 50%;
+                    background-color: #b61984;
+                    transition: all 0.9s;
+
+            }
         }
     }
     .nav-item{

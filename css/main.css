@@ -19,6 +19,32 @@ header {
   background-size: cover;
   background-repeat: no-repeat;
   height: 200px;
+  position: relative;
+}
+header .navbar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 15;
+  margin-right: 35px;
+}
+header #navbarHeader .nav-item.active:hover::after {
+  display: none;
+  transition: all 0.5s;
+}
+header #navbarHeader .nav-item.active::after {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: 5;
+  margin-left: 20px;
+  margin-top: -4px;
+  pointer-events: none;
+  height: 8px;
+  width: 8px;
+  border-radius: 50%;
+  background-color: #b61984;
+  transition: all 0.9s;
 }
 header .nav-item .nav-link {
   color: #000;
